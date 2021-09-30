@@ -1,0 +1,43 @@
+@import "../../scss/variables/variables.scss";
+@import "../../scss/mixin/mixin.scss";
+
+.what {
+  display: flex;
+}
+
+.what__detail {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.what__background {
+  @include backdrop("../../images/interior2.jpg");
+}
+
+.what__1 {
+  position: sticky;
+  top: 0;
+  width: 50vw;
+  height: 50vh;
+  background-color: $colorsecondry;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.what__head {
+  @include header;
+}
+
+.what__bottom {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-top: 5rem;
+  text-align: center;
+  @include para;
+}

@@ -1,0 +1,44 @@
+@import "../../scss/variables/variables.scss";
+@import "../../scss/mixin/mixin.scss";
+
+.hometop {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4rem;
+
+    &top {
+      width: 50vw;
+      color: white;
+      font-size: 4.5rem;
+      font-weight: 700;
+      line-height: 6.5rem;
+    }
+
+    &bottom {
+      margin-top: 2rem;
+      width: 50vw;
+      text-align: center;
+      font-size: 4rem;
+      color: white;
+      text-shadow: 0.5px 0.5px 30px black;
+    }
+
+    &button {
+      @include animatedbutton(2.5rem);
+      margin-top: 5rem !important;
+    }
+  }
+}
+
+.button__arrow {
+  margin-left: 2rem !important;
+  font-size: 4rem !important;
+}

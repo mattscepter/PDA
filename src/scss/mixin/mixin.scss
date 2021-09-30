@@ -1,0 +1,58 @@
+@mixin backdrop($f, $g: rgba(0, 0, 0, 0.4)) {
+  background-image: linear-gradient($g, $g), url($f);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: 100%;
+}
+
+@mixin header($f: 7rem, $c: $colorprimary) {
+  font-size: $f;
+  font-weight: 700;
+  color: $c;
+}
+
+@mixin para($f: 2.5rem, $c: white) {
+  color: $c;
+  font-size: $f;
+  font-weight: 200;
+}
+
+@mixin animatedbutton($f: 2.5rem) {
+  padding: 0.6 * $f !important;
+  color: white !important;
+  font-size: $f !important;
+  text-shadow: 0.5px 0.5px 30px black !important;
+  border: 2px solid $colorprimary !important;
+  border-radius: 0px !important;
+  transition: 0.5s ease-in-out !important;
+
+  &:hover {
+    background-color: rgba(248, 92, 56, 0.1) !important;
+    transform: scale(1.1) !important;
+  }
+}
+
+@mixin input {
+  margin: 1rem;
+  width: 50rem;
+  height: 4rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7rem;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  outline-width: 0;
+  appearance: none;
+
+  &::placeholder {
+    color: lightgray;
+  }
+  &:focus {
+    border: 1px solid $colorprimary;
+    box-shadow: 0px 0px 7px 0px $colorprimary;
+    -webkit-box-shadow: 0px 0px 7px 0px $colorprimary;
+    -moz-box-shadow: 0px 0px 7px 0px $colorprimary;
+  }
+}

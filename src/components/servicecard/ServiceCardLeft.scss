@@ -1,0 +1,36 @@
+@import "../../scss/mixin/mixin.scss";
+@import "../../scss/variables/variables.scss";
+
+.servicecard__left {
+  height: 45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include backdrop("../../images/interior2.jpg", rgba(121, 121, 121, 0.651));
+}
+
+.servicecardleft__text > h2 {
+  @include header(8rem, white);
+  margin-bottom: 2rem;
+}
+
+.servicecardleft__text > h2 > span > div {
+  height: 1rem;
+  width: 10rem;
+  border-radius: 0.2rem;
+  background-color: $colorprimary;
+}
+
+.servicecardleft__text > p {
+  width: 75rem;
+  text-align: left;
+  @include para(2.3rem);
+}
+
+.servicecardleft__img {
+  object-fit: cover;
+  height: 35rem;
+  width: 45rem;
+  clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
+  transition: transform 0.5s ease-in-out;
+}

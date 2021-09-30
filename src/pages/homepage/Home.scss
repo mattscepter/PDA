@@ -1,0 +1,125 @@
+@import "../../scss/mixin/mixin.scss";
+@import "../../scss/variables/variables.scss";
+
+.home {
+  @include backdrop("../../images/backdrop.jpg");
+}
+
+.projectbutton {
+  height: 52rem;
+  background-color: #262526;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__button {
+    margin-top: 4rem !important;
+    @include animatedbutton;
+  }
+}
+
+.projectbutton__head {
+  @include header(8rem);
+}
+
+.menu__options {
+  padding: 0;
+  padding: 2rem;
+  padding-left: 2rem;
+  color: white;
+  font-weight: 500;
+  font-size: 2.4rem;
+  border-radius: 1rem;
+
+  &:hover {
+    background-color: $colorprimary;
+  }
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 4rem;
+  height: 3rem;
+  top: 7rem;
+  right: 14rem;
+}
+
+.bm-burger-button::after {
+  content: "";
+  background-color: #262526;
+  display: block;
+  margin-top: -2rem;
+  margin-left: -1.5rem;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 100rem;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: $colorprimary;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #ff754b;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 2rem;
+  width: 2rem;
+  transform: scale(2.5) translateX(-1.5rem) translateY(1rem);
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  border-radius: 0;
+  background: #bdc3c7;
+}
+
+.bm-cross-button:hover .bm-cross {
+  background: $colorprimary;
+}
+
+/*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+.bm-menu-wrap {
+  position: fixed;
+  top: 0;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: $colorsecondry;
+  padding: 2.5rem 1.5rem 0;
+  font-size: 1.15rem;
+  overflow: hidden !important;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8rem;
+  margin-top: 7rem;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+}

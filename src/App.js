@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "aos/dist/aos.css";
+import "./App.scss";
+import Home from "./pages/homepage/Home";
+import Contact from "./pages/contactpage/Contact.js";
+import { Route, Switch } from "react-router-dom";
+import NavBar from "./components/navbar/NavBar";
+import ImgGallery from "./pages/gallerypage/Gallery";
+import Aos from "aos";
 
 function App() {
+  useEffect(() => {
+    Aos.init({ duration: 1200 });
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/gallery">
+          <ImgGallery />
+        </Route>
+        <Route path="/contactus">
+          <Contact />
+        </Route>
+      </Switch>
     </div>
   );
 }

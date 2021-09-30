@@ -1,0 +1,37 @@
+@import "../../scss/mixin/mixin.scss";
+@import "../../scss/variables/variables.scss";
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  background-color: $back;
+  height: 100vh;
+
+  h2 {
+    margin-top: 7rem;
+    @include header(6rem);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__images {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
+
+.close_1x3s325 {
+  svg {
+    fill: $colorprimary;
+  }
+}
+
+.ReactGridGallery_tile-viewport {
+  border-radius: 0.7rem;
+  img {
+    transition: transform 0.5s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

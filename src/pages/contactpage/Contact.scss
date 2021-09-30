@@ -1,0 +1,163 @@
+@import "../../scss/variables/variables.scss";
+@import "../../scss/mixin/mixin.scss";
+
+.contact {
+  background-color: $back;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+  h2 {
+    margin-top: 7rem;
+    @include header(6rem);
+  }
+
+  &__body {
+    width: 90vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .divider {
+      height: 40rem;
+      width: 0.5rem;
+      background-color: $colorprimary;
+    }
+
+    &form {
+      width: 50rem;
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      padding: 4rem;
+      border-radius: 2rem;
+      box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+
+      h3 {
+        font-size: 2rem;
+        font-weight: 400;
+        color: $colorsecondry;
+        margin-bottom: 1rem;
+      }
+
+      input {
+        @include input;
+      }
+
+      textarea {
+        margin: 1rem;
+        width: 50rem;
+        height: 15rem;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.7rem;
+        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 1rem;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        outline-width: 0;
+        &::placeholder {
+          color: lightgray;
+        }
+        &:focus {
+          border: 1px solid $colorprimary;
+          box-shadow: 0px 0px 7px 0px $colorprimary;
+          -webkit-box-shadow: 0px 0px 7px 0px $colorprimary;
+          -moz-box-shadow: 0px 0px 7px 0px $colorprimary;
+        }
+      }
+
+      select {
+        width: 53.3rem;
+        height: 5.5rem;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        outline-width: 0;
+        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 1rem;
+        font-size: 1.7rem;
+        appearance: none;
+        background-image: url("../../images/arrow.svg");
+        background-size: 2rem 2.5rem;
+        background-repeat: no-repeat;
+        background-position-x: 97%;
+        background-position-y: 50%;
+
+        &:focus {
+          border: 1px solid $colorprimary;
+          box-shadow: 0px 0px 7px 0px $colorprimary;
+          -webkit-box-shadow: 0px 0px 7px 0px $colorprimary;
+          -moz-box-shadow: 0px 0px 7px 0px $colorprimary;
+        }
+
+        option {
+          &:hover {
+            background-color: $colorprimary;
+          }
+        }
+      }
+
+      button {
+        margin-top: 2rem;
+        width: 53.5rem;
+        background-color: $colorprimary;
+        height: 5rem;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        text-transform: capitalize;
+        font-size: 2rem;
+
+        &:hover {
+          background-color: #ff8f76;
+        }
+      }
+      .MuiTouchRipple-root span {
+        color: #ff5100 !important;
+      }
+    }
+
+    &social {
+      h3 {
+        font-size: 4rem;
+        font-weight: 500;
+        color: $colorsecondry;
+        margin-bottom: 5rem;
+        text-align: center;
+      }
+
+      a {
+        text-decoration: none;
+        color: $colorsecondry;
+      }
+
+      div {
+        display: flex;
+        align-content: flex-start;
+        width: 50rem;
+        padding: 1rem;
+        span {
+          display: flex;
+          align-items: center;
+          padding-right: 2rem;
+
+          .MuiSvgIcon-root {
+            color: $colorprimary;
+            font-size: 4.5rem;
+          }
+        }
+
+        h4 {
+          font-size: 2.5rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
