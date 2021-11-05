@@ -8,9 +8,11 @@ import AboutSection from '../../components/about/AboutSection';
 import Services from '../../components/service/Services';
 import { Button } from '@material-ui/core';
 import ArrowForwardRoundedIcon from '@material-ui/icons/ArrowForwardRounded';
+import { useHistory } from 'react-router';
 // import { slide as Menu } from "react-burger-menu";
 
 function Home() {
+  const history = useHistory();
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -41,10 +43,18 @@ function Home() {
       <Services />
       <div className="projectbutton">
         <h2 className="projectbutton__head" data-aos="fade-down">
-          Not Sure Yet?
+          {/* Not Sure Yet? */}
+          Impressed by our services
         </h2>
-        <Button className="projectbutton__button" data-aos="fade-up">
-          Have a look at our projects
+        <Button
+          onClick={() => {
+            history.push('/contactus');
+          }}
+          className="projectbutton__button"
+          data-aos="fade-up"
+        >
+          {/* Have a look at our projects */}
+          Contact Us Now
           <ArrowForwardRoundedIcon className="button__arrow" />
         </Button>
       </div>

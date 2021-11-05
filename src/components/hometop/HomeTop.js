@@ -3,6 +3,8 @@ import './HomeTop.scss';
 import { Button } from '@material-ui/core';
 import ArrowForwardRoundedIcon from '@material-ui/icons/ArrowForwardRounded';
 import pdalogo from '../../images/pdalogo.svg';
+import ArrowDownwardRoundedIcon from '@material-ui/icons/ArrowDownwardRounded';
+
 // import NavBar from "../navbar/NavBar";
 
 function HomeTop() {
@@ -32,10 +34,15 @@ function HomeTop() {
           so you don't have to.
         </p>
         <p className="hometop__textbottom">Let us give you peace of mind.</p>
-        <Button className="hometop__textbutton">
+        {/* <Button className="hometop__textbutton">
           Tell Us Know About Your Project
           <ArrowForwardRoundedIcon className="button__arrow" />
-        </Button>
+        </Button> */}
+        <div>
+          <div data-aos="fade-up">
+            <ArrowDownwardRoundedIcon className="arrow__down" />
+          </div>
+        </div>
       </div>
     </div>
   );

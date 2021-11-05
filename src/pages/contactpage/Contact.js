@@ -64,11 +64,7 @@ function Contact() {
               <h4>instagram.com/pda</h4>
             </div>
           </Link>
-          <Link
-            to={{
-              pathname: `https://www.facebook.com/Patel-Designer-Associates`,
-            }}
-          >
+          <Link>
             <div>
               <span>
                 <FacebookIcon />
@@ -76,22 +72,22 @@ function Contact() {
               <h4>facebook.com/pda</h4>
             </div>
           </Link>
-          <Link to="/">
+          <a href={`mailto:${'pda_rjverma@rediffmail.com'}`}>
             <div>
               <span>
                 <MailIcon />
               </span>
-              <h4>gmail.com/pda</h4>
+              <h4>pda_rjverma@rediffmail.com</h4>
             </div>
-          </Link>
-          <Link to="/">
+          </a>
+          <a href={`tel:${9415025071}`}>
             <div>
               <span>
                 <PhoneIcon />
               </span>
-              <h4>1234567898</h4>
+              <h4>8948933309, 9415025071</h4>
             </div>
-          </Link>
+          </a>
           <Link to="/">
             <div>
               <span>

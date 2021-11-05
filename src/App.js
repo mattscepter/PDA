@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
-import "aos/dist/aos.css";
-import "./App.scss";
-import Home from "./pages/homepage/Home";
-import Contact from "./pages/contactpage/Contact.js";
-import { Route, Switch } from "react-router-dom";
-import NavBar from "./components/navbar/NavBar";
-import ImgGallery from "./pages/gallerypage/Gallery";
-import Aos from "aos";
+import React, { useEffect } from 'react';
+import 'aos/dist/aos.css';
+import './App.scss';
+import Home from './pages/homepage/Home';
+import Contact from './pages/contactpage/Contact.js';
+import { Route, Switch } from 'react-router-dom';
+import NavBar from './components/navbar/NavBar';
+import ImgGallery from './pages/gallerypage/Gallery';
+import Aos from 'aos';
 
 function App() {
   useEffect(() => {
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar />
+      {/* <NavBar /> */}
       <Switch>
         <Route exact path="/">
           <Home />
