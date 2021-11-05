@@ -1,6 +1,6 @@
-import React from "react";
-import "./AboutSection.scss";
-import Counter from "../counter/Counter";
+import React from 'react';
+import './AboutSection.scss';
+import Counter from '../counter/Counter';
 
 function AboutSection() {
   return (
@@ -13,9 +13,9 @@ function AboutSection() {
             data-aos-duration="3000"
           >
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-              quia magnam corporis cumque deserunt. Dolor porro reiciendis
-              dignissimos totam at!
+              We have been in the same field from since 1991 and we confidently
+              deal with design with complexity. With vision and precision we
+              bring solution and masterfull execution.
             </p>
           </div>
         </div>
@@ -34,9 +34,16 @@ function AboutSection() {
         data-aos="fade-up"
         data-aos-duration="3000"
       >
-        <Counter end={29} text="Years" />
-        <Counter end={945} text="Projects" />
-        <Counter end={395} text="Satisfied Clients" />
+        <Counter
+          end={
+            new Date().toLocaleString('en-US', {
+              year: 'numeric',
+            }) - 1991
+          }
+          text="Years"
+        />
+        <Counter end={2100} text="Projects" />
+        <Counter end={1200} text="Satisfied Clients" />
       </div>
     </div>
   );

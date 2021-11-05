@@ -1,8 +1,8 @@
-import React from "react";
-import "./HomeTop.scss";
-import { Button } from "@material-ui/core";
-import ArrowForwardRoundedIcon from "@material-ui/icons/ArrowForwardRounded";
-import pdalogo from "../../images/pdalogo.svg";
+import React from 'react';
+import './HomeTop.scss';
+import { Button } from '@material-ui/core';
+import ArrowForwardRoundedIcon from '@material-ui/icons/ArrowForwardRounded';
+import pdalogo from '../../images/pdalogo.svg';
 // import NavBar from "../navbar/NavBar";
 
 function HomeTop() {
@@ -17,18 +17,18 @@ function HomeTop() {
           src={pdalogo}
           alt=""
           style={{
-            width: "50rem",
-            padding: "5rem",
-            color: "white",
+            width: '50rem',
+            padding: '5rem',
+            color: 'white',
           }}
         />
         <p className="hometop__texttop">
-          We handle your project from{" "}
+          We handle your project from{' '}
           <span
-            style={{ color: "#fc7c5f", fontSize: "5.5rem", display: "block" }}
+            style={{ color: '#fc7c5f', fontSize: '5.5rem', display: 'block' }}
           >
-            Architecture to Construction
-          </span>{" "}
+            Architecture to Interior
+          </span>{' '}
           so you don't have to.
         </p>
         <p className="hometop__textbottom">Let us give you peace of mind.</p>

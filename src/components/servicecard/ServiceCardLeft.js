@@ -1,7 +1,7 @@
-import React from "react";
-import "./ServiceCardLeft.scss";
+import React from 'react';
+import './ServiceCardLeft.scss';
 
-function ServiceCardLeft({ image, title }) {
+function ServiceCardLeft({ image, title, text }) {
   return (
     <div className="servicecard__left">
       <div className="servicecard__content">
@@ -12,17 +12,12 @@ function ServiceCardLeft({ image, title }) {
               <div></div>
             </span>
           </h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-            ut dicta veniam molestiae quisquam vero consectetur reiciendis iure
-            facilis voluptate id, dolor obcaecati impedit amet mollitia
-            quibusdam vitae possimus? Sit.
-          </p>
+          <p>{text}</p>
         </div>
         <img
           src={image}
           alt="house"
-          style={{ marginLeft: "5vw" }}
+          style={{ marginLeft: '5vw' }}
           className="servicecardleft__img"
           data-aos="fade-right"
         />

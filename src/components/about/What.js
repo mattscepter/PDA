@@ -1,5 +1,5 @@
-import React from "react";
-import "./What.scss";
+import React from 'react';
+import './What.scss';
 
 function What() {
   return (
@@ -18,10 +18,10 @@ function What() {
             data-aos="fade-up"
             data-aos-duration="2000"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-            animi. Quidem ratione quod numquam, quisquam quis esse, ullam
-            quibusdam ab eligendi laudantium reprehenderit rerum? Dolores
-            accusantium aliquid adipisci laborum odio.
+            Patel Designers and Associates popularly known as PDA is a Lucknow
+            based architectural company. We offer consulting assistance in a
+            wide area of architectural, structural (Interior/Exterior) &
+            construction management projects, housing & township, etc.
           </h4>
         </div>
       </div>

@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./NavBar.scss";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './NavBar.scss';
 
 function NavBar() {
   return (
@@ -9,15 +9,15 @@ function NavBar() {
         <Link to="/">
           <h3>HOME</h3>
         </Link>
-        <Link>
+        {/* <Link>
           <h3>PROJECTS</h3>
-        </Link>
+        </Link> */}
         <Link to="/gallery">
           <h3>GALLERY</h3>
         </Link>
-        <Link>
+        {/* <Link>
           <h3>BLOG</h3>
-        </Link>
+        </Link> */}
         <Link>
           <h3>ABOUT</h3>
         </Link>

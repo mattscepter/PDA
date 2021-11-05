@@ -1,13 +1,13 @@
-import { Button } from "@material-ui/core";
-import React, { useEffect } from "react";
-import "./Contact.scss";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import MailIcon from "@material-ui/icons/Mail";
-import PhoneIcon from "@material-ui/icons/Phone";
-import LocationOnIcon from "@material-ui/icons/LocationOn";
-import { Link } from "react-router-dom";
-import Aos from "aos";
+import { Button } from '@material-ui/core';
+import React, { useEffect } from 'react';
+import './Contact.scss';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import MailIcon from '@material-ui/icons/Mail';
+import PhoneIcon from '@material-ui/icons/Phone';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import { Link } from 'react-router-dom';
+import Aos from 'aos';
 
 function Contact() {
   useEffect(() => {
@@ -28,7 +28,7 @@ function Contact() {
               disabled
               selected
               hidden
-              style={{ color: "lightgray" }}
+              style={{ color: 'lightgray' }}
             >
               Select a service you need assistance with
             </option>
@@ -53,7 +53,10 @@ function Contact() {
         <div className="contact__bodysocial" data-aos="fade-left">
           <h3>Or reach out to us at</h3>
 
-          <Link to="/">
+          <Link
+            to={{ pathname: `https://www.instagram.com/ar.deergha_patel` }}
+            target="_blank"
+          >
             <div>
               <span>
                 <InstagramIcon />
@@ -61,7 +64,11 @@ function Contact() {
               <h4>instagram.com/pda</h4>
             </div>
           </Link>
-          <Link to="/">
+          <Link
+            to={{
+              pathname: `https://www.facebook.com/Patel-Designer-Associates`,
+            }}
+          >
             <div>
               <span>
                 <FacebookIcon />
